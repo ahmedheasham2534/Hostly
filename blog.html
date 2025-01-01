@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Deerhost Template">
+    <meta name="keywords" content="Deerhost, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogs</title>
+    <link rel="icon" href="img/host-logo.png" type="image/png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas__menu__overlay"></div>
+    <div class="offcanvas__menu__wrapper">
+        <div class="canvas__close">
+            <span class="fa fa-times-circle-o"></span>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav class="offcanvas__menu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./hosting.html">Hosting</a></li>
+
+                <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">News</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__info">
+            <ul>
+                <li><span class="icon_phone"></span> +1 123-456-7890</li>
+                <li><span class="fa fa-envelope"></span> Support@gmail.com</li>
+            </ul>
+        </div>
+        <div class="offcanvas__auth">
+            <ul>
+                <!-- <button id="registerBtn" onclick="openRegisterModal()"> <i class="fa-solid fa-user-plus"></i>Login / Register</button> -->
+            </ul>
+        </div>
+        
+    </div>
+    <!-- Offcanvas Menu End -->
+    <!-- ---------------------------------chaat assistance---------------------------------- -->
+    
+      
+    <div class="chat-widget">
+        
+        <div class="chat-icon" id="chat-icon">
+          <i class="fa-regular fa-comment-dots"></i>
+        </div>
+        <div class="chat-window hidden" id="chat-window">
+          <div class="chat-header">
+            <h4>Chat Assistant</h4>
+            <button id="close-chat">✖</button>
+          </div>
+          <div class="chat-body" id="chat-body">
+            <p>Please choose your subscription plan:</p>
+            <div class="plan">
+              <button class="chat-option" onclick="selectPlan('monthly')">Monthly</button>
+            <button class="chat-option" onclick="selectPlan('annual')">Annual</button>
+            </div>
+          </div>
+          <div class="chat-footer">
+            <div class="chat-sent">
+              <input type="text" id="user-input" placeholder="Enter Your Email" />
+            <button id="send-button"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            <span id="response-message" class="hidden">We will contact you.</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- ---------------------------------/chaat assistance---------------------------------- -->
+    <!-- ---------------------------------login page--------------------------- -->
+    <div id="registerModal" class="modal" style="display:none;">
+        <div class="modal-content">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <h2>Sign Up</h2>
+        <div class="login-img">
+            <span >Hostly</span>
+        </div>
+          <form id="registerForm">
+            <input type="text" id="username" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Create a strong password" required>
+            <button type="submit" class="site-btn">Submit</button>
+          </form>
+          <p id="successMessage" style="display: none; color: green; margin-top: 10px;">
+            You are successfully registered!
+          </p>
+        </div>
+      </div>
+    <!-- Landing Page Content -->
+  <!-- Registration Modal -->
+  
+      <!-- ---------------------------------login page--------------------------- -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section header-normal">
+        <div class="header__info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__info-left">
+                            <ul>
+                                <li><span class="icon_phone"></span>+1 123-456-7890</li>
+                                <li><span class="fa fa-envelope"></span> Support@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__info-right">
+                            <ul>
+                                <!-- <button id="registerBtn" onclick="openRegisterModal()"> <i class="fa-solid fa-user-plus"></i>Login / Register</button> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html">
+                            <img src="img/host-logo.png" alt="">
+                            <span>Hostly</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <nav class="header__menu">
+                        <ul>
+                            <li ><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./hosting.html">Hosting</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./pricing.html">Pricing</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="./blog.html">News</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__option">
+                        <a href="./index.html"><span class="fa fa-home"></span> Home</a>
+                        <span>News</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Blog Section Begin -->
+    <section class="blog-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__pic set-bg" data-setbg="img/blog/hosting.jpg">
+                                    <div class="label">Hosting</div>
+                                </div>
+                                <div class="blog__text">
+                                    <h5><a href="#">Reliable hosting solutions for seamless performance...</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-user"></i> Ahmed Hisham</li>
+                                        <li><i class="fa fa-clock-o"></i> Seb 06, 2024</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__pic set-bg" data-setbg="img/blog/blog04.png">
+                                    <div class="label">News</div>
+                                </div>
+                                <div class="blog__text">
+                                    <h5><a href="#">Latest updates and news in web hosting...</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-user"></i> Sarah Adams</li>
+                                        <li><i class="fa fa-clock-o"></i> Nov 06, 2023</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__pic set-bg" data-setbg="img/blog/blog-3.jpg">
+                                    <div class="label">Servers</div>
+                                </div>
+                                <div class="blog__text">
+                                    <h5><a href="#">Insights on server technology and performance....</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-user"></i> Halen Hoy</li>
+                                        <li><i class="fa fa-clock-o"></i> Jan 12, 2020</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__pic set-bg" data-setbg="img/blog/blog-4.jpg">
+                                    <div class="label">Guides</div>
+                                </div>
+                                <div class="blog__text">
+                                    <h5><a href="#">Step-by-step guides for hosting success...</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-user"></i> Jack Dowsen</li>
+                                        <li><i class="fa fa-clock-o"></i> Feb 19, 2024</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__pic set-bg" data-setbg="img/blog/blog05.png">
+                                    <div class="label">Updates</div>
+                                </div>
+                                <div class="blog__text">
+                                    <h5><a href="#">Stay informed with the latest hosting updates...</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-user"></i> Jonathan Doe</li>
+                                        <li><i class="fa fa-clock-o"></i> Seb 23, 2019</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__pic set-bg" data-setbg="img/blog/cloud-services.avif">
+                                    <div class="label">Performance</div>
+                                </div>
+                                <div class="blog__text">
+                                    <h5><a href="#">Boost website speed and reliability effortlessly...</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-user"></i> Mohammed Aymen</li>
+                                        <li><i class="fa fa-clock-o"></i> Jun 13, 2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__pic set-bg" data-setbg="img/blog/blog01.avif">
+                                    <div class="label">Domains</div>
+                                </div>
+                                <div class="blog__text">
+                                    <h5><a href="#">Explore domain registration tips and strategies...</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-user"></i> Lana Croft</li>
+                                        <li><i class="fa fa-clock-o"></i> Oct 23, 2020</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__pic set-bg" data-setbg="img/blog/blog-8.jpg">
+                                    <div class="label">Tutorials</div>
+                                </div>
+                                <div class="blog__text">
+                                    <h5><a href="#">Step-by-step instructions for hosting solutions...</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-user"></i> Steve Jonathan</li>
+                                        <li><i class="fa fa-clock-o"></i> Dec 02, 2024</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="load-more">
+                                <a href="#" class="primary-btn">Load more posts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog__sidebar">
+                        <div class="blog__sidebar__item">
+                            <div class="sidebar__title">
+                                <h6>Follow us</h6>
+                            </div>
+                            <div class="sidebar__social">
+                                <a href="https://www.facebook.com/" class="facebook"><i style="font-size: 20px;" class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.twitter.com/" class="twitter"><i  style="font-size: 20px;" class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/" class="youtube"><i  style="font-size: 20px;" class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/" class="instagram"><i  style="font-size: 20px;" class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <div class="sidebar__title">
+                                <h6>Feature posts</h6>
+                            </div>
+                            <div class="sidebar__feature__post">
+                                <div class="sidebar__feature__item">
+                                    <div class="label">Hosting</div>
+                                    <h6><a href="">Reliable hosting solutions for seamless performance</a></h6>
+                                    <ul>
+                                        <li><i class="fa fa-clock-o"></i>Seb 06, 2024</li>
+                                    </ul>
+                                </div>
+                                <div class="sidebar__feature__item">
+                                    <div class="label">Guides</div>
+                                    <h6><a href="#">Step-by-step guides for hosting success</a></h6>
+                                    <ul>
+                                        <li><i class="fa fa-clock-o"></i>Feb 19, 2024</li>
+                                    </ul>
+                                </div>
+                                <div class="sidebar__feature__item">
+                                    <div class="label">Server</div>
+                                    <h6><a href="#">Insights on server technology and performance</a></h6>
+                                    <ul>
+                                        <li><i class="fa fa-clock-o"></i>Jan 12, 2020</li>
+                                    </ul>
+                                </div>
+                                <div class="sidebar__feature__item">
+                                    <div class="label">Domains</div>
+                                    <h6><a href="#">Explore domain registration tips and strategies</a></h6>
+                                    <ul>
+                                        <li><i class="fa fa-clock-o"></i>Oct 23, 2020</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <div class="sidebar__subscribe">
+                                <div class="sidebar__title">
+                                    <h6>Subscribe</h6>
+                                </div>
+                                <p>Enter your e-mail address to subscribe or send a message</p>
+                                <form action="#">
+                                    <input type="text" placeholder="Email">
+                                    <button type="" class="site-btn">Subscribe</button>
+                                    <button class="site-btn"><a style="color: white;"  href="mailto:hia32307@gmail.com?subject=Hello From the website">Email Us</a></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top-call">
+                            <h5>Need Help? Call us</h5>
+                            <h2 style="color: white; font-size:23px;">+1 234-456-7890</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a href="index.html">
+                            <div class="footer__top-auth">
+                                <h5>Join Now And Have Free Month Of Deluxe Hosting</h5>
+                                <button class="log-btn" id="registerBtn" onclick="openRegisterModal()"> <i class="fa-solid fa-user-plus"></i>Login</button>
+                                <button id="registerBtn" onclick="openRegisterModal()"> <i class="fa-regular fa-user"></i>Sign Up</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__text set-bg" data-setbg="img/footer-bg.png">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer__text-about">
+                            <div class="footer-logo">
+                                <a href="./index.html">
+                                    <img src="img/host-logo.png" alt="">
+                                    <span>Hostly</span>
+                                </a>
+                            </div>
+                            <p>Hostly offers reliable hosting, domain registration, and website solutions tailored for your needs. Crafted by experts to ensure performance, security, and scalability. Contact us anytime for support—your success is our priority. </p>
+                            <div class="footer__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer__text-widget">
+                            <h5>Company</h5>
+                            <ul>
+                                <li><a href="index.html">Company</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="blog-details.html">Press & Media</a></li>
+                                <li><a href="blog.html">News / Blogs</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer__text-widget">
+                            <h5>Hosting</h5>
+                            <ul>
+                                <li><a href="hosting.html">Web Hosting</a></li>
+                                <li><a href="hosting.html">Reseller Hosting</a></li>
+                                <li><a href="hosting.html">VPS Hosting</a></li>
+                                <li><a href="hosting.html">Dedicated Servers</a></li>
+                                <li><a href="hosting.html">Cloud Hosting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer__text-widget">
+                            <h5>cONTACT US</h5>
+                            <ul class="footer__widget-info">
+                                <li><span class="fa fa-map-marker"></span> 500 South Main Street Los Angeles,<br />
+                                    ZZ-96110 USA</li>
+                                <li><span class="fa fa-mobile"></span> 125-711-811 | 125-668-886</li>
+                                <li><span class="fa fa-headphones"></span> Support.hosting@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__text-copyright">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="index.html" target="_blank">Hostly</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

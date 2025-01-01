@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Deerhost Template">
+    <meta name="keywords" content="Deerhost, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="icon" href="img/host-logo.png" type="image/png">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas__menu__overlay"></div>
+    <div class="offcanvas__menu__wrapper">
+        <div class="canvas__close">
+            <span class="fa fa-times-circle-o"></span>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav class="offcanvas__menu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./hosting.html">Hosting</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">News</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__info">
+            <ul>
+                <li><span class="icon_phone"></span> +1 123-456-7890</li>
+                <li><span class="fa fa-envelope"></span> Support@gmail.com</li>
+            </ul>
+        </div>
+        <div class="offcanvas__auth">
+            <ul>
+                <!-- <button id="registerBtn" onclick="openRegisterModal()"> <i class="fa-solid fa-user-plus"></i>Login / Register</button> -->
+            </ul>
+        </div>
+    </div>
+    <div class="chat-widget">
+        
+        <div class="chat-icon" id="chat-icon">
+          <i class="fa-regular fa-comment-dots"></i>
+        </div>
+        <div class="chat-window hidden" id="chat-window">
+          <div class="chat-header">
+            <h4>Chat Assistant</h4>
+            <button id="close-chat">✖</button>
+          </div>
+          <div class="chat-body" id="chat-body">
+            <p>Please choose your subscription plan:</p>
+            <div class="plan">
+              <button class="chat-option" onclick="selectPlan('monthly')">Monthly</button>
+            <button class="chat-option" onclick="selectPlan('annual')">Annual</button>
+            </div>
+          </div>
+          <div class="chat-footer">
+            <div class="chat-sent">
+              <input type="text" id="user-input" placeholder="Enter Your Email" />
+            <button id="send-button"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            <span id="response-message" class="hidden">We will contact you.</span>
+          </div>
+        </div>
+      </div>
+            <!-- ---------------------------------/chaat assistance---------------------------------- -->
+        <!-- ---------------------------------login page--------------------------- -->
+    <div id="registerModal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <h2>Sign Up</h2>
+        <div class="login-img">
+            <span >Hostly</span>
+        </div>
+          <form id="registerForm">
+            <input type="text" id="username" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Create a strong password" required>
+            <button type="submit" class="site-btn">Submit</button>
+          </form>
+          <p id="successMessage" style="display: none; color: green; margin-top: 10px;">
+            You are successfully registered!
+          </p>
+        </div>
+      </div>
+    <!-- Landing Page Content -->
+  <!-- Registration Modal -->
+    <!-- Header Section Begin -->
+    
+    <header class="header-section header-normal">
+        <div class="header__info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__info-left">
+                            <ul>
+                                <li><span class="icon_phone"></span>+1 123-456-7890</li>
+                                <li><span class="fa fa-envelope"></span> Support@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__info-right">
+                            <ul>
+                                <!-- <button id="registerBtn" onclick="openRegisterModal()"> <i class="fa-solid fa-user-plus"></i>Login / Register</button> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html">
+                            <img src="img/host-logo.png" alt="">
+                            <span>Hostly</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <nav class="header__menu">
+                        <ul>
+                            <li ><a href="./index.html">Home</a></li>
+                            <li class="active"> <a href="./about.html">About</a></li>
+                            <li><a href="./hosting.html">Hosting</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./pricing.html">Pricing</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">News</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__option">
+                        <a href="./index.html"><span class="fa fa-home"></span> Home</a>
+                        <span>About</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- About Section Begin -->
+    <section class="about-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__img">
+                        <img src="img/about-page.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <h2>Welcom to Hostly</h2>
+                        <p>Welcome to Hostly – your trusted partner for seamless hosting and domain solutions.
+                            Empowering businesses with reliable, secure,
+                            and affordable services to bring their online presence to life effortlessly.</p>
+                        <div class="about__achievement">
+                            <div class="about__achieve__item">
+                                <span class="fa-solid fa-users"></span>
+                                <h4 class="achieve-counter">3000</h4>
+                                <p>Clients</p>
+                            </div>
+                            <div class="about__achieve__item">
+                                <span class="fa-solid fa-blog"></span>
+                                <h4 class="achieve-counter">3200</h4>
+                                <p>Domains</p>
+                            </div>
+                            <div class="about__achieve__item">
+                                <span class="fa-solid fa-server"></span>
+                                <h4 class="achieve-counter">1500</h4>
+                                <p>Server</p>
+                            </div>
+                            <div class="about__achieve__item">
+                                <span class="fa-brands fa-uncharted"></span>
+                                <h4 class="achieve-counter">3100</h4>
+                                <p>Installs</p>
+                            </div>
+                        </div>
+                        <a href="pricing.html" class="primary-btn">Get started now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Feature Section Begin -->
+    <section class="feature-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>Our Hosting Features</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <span class="fa-brands fa-cloudflare"></span>
+                        <h5>Auto update</h5>
+                        <p>Automatically keep your website updated with the latest features</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <span class="fa fa-sliders"></span>
+                        <h5>Optimized software</h5>
+                        <p>Ensure peak performance with fast, reliable, and optimized software</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <span class="fa fa-database"></span>
+                        <h5>Daily backups</h5>
+                        <p>Secure your data with reliable and automatic daily backups</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <span class="fa fa-globe"></span>
+                        <h5>Wide networking</h5>
+                        <p>Enhance connectivity with robust, fast, and wide network coverage</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <span class="fa-solid fa-shield-halved"></span>
+                        <h5>Protected</h5>
+                        <p>Keep your website secure with advanced protection and encryption</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <span class="fa fa-headphones"></span>
+                        <h5>Free support</h5>
+                        <p>Enjoy 24/7 expert assistance with our reliable free support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <div class="section-title normal-title">
+                        <h3>Meet our team</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="team__btn">
+                        <a href="#" class="primary-btn">View all</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="team__item">
+                        <div class="team__pic">
+                            <img src="img/team/team-01.png" alt="">
+                        </div>
+                        <div class="team__text">
+                            <h5>Mark Adam</h5>
+                            <span>Chief executive officer</span>
+                            <p>Mark Adam, Chief Executive Officer, 
+                                leading Hostly with innovation, vision, and strategic expertise</p>
+                            <div class="team__social">
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="team__item">
+                        <div class="team__pic">
+                            <img src="img/team/team-02.png" alt="">
+                        </div>
+                        <div class="team__text">
+                            <h5>Sabrina Ramzy</h5>
+                            <span>Software engineer</span>
+                            <p>Sabrina Ramzy, Software Engineer, crafting reliable,
+                                innovative, and efficient solutions for Hostly's success</p>
+                            <div class="team__social">
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="team__item">
+                        <div class="team__pic">
+                            <img src="img/team/team-03.png" alt="">
+                        </div>
+                        <div class="team__text">
+                            <h5>Ahmed Hisham</h5>
+                            <span>Cloud Engineer</span>
+                            <p>Ahmed Hisham, Cloud Engineer, optimizing scalable, secure,
+                                and efficient cloud solutions for Hostly's services</p>
+                            <div class="team__social">
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="team__item">
+                        <div class="team__pic">
+                            <img src="img/team/team-05.png" alt="">
+                        </div>
+                        <div class="team__text">
+                            <h5>Sarah Croft</h5>
+                            <span>DevOps Engineer</span>
+                            <p>Sarah Croft, DevOps Engineer, streamlining development and operations for seamless deployments and system reliability.</p>
+                            <div class="team__social">
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>Our Client say</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testimonial__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <img src="img/testimonial/testimonial-1.jpg" alt="">
+                            <h5>Nichole Gorge</h5>
+                            <span>Designer</span>
+                            <p>Hostly provides exceptional hosting services with seamless performance,
+                                making it the perfect </p>
+                            <div class="testimonial__rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <img src="img/testimonial/testimonial-2.jpg" alt="">
+                            <h5>Linda Stark</h5>
+                            <span>Software Engineer</span>
+                            <p>Hostly's reliable hosting and fast support make it ideal
+                                for software engineers needing robust solutions</p>
+                            <div class="testimonial__rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <img src="img/team/team-1.jpg" alt="">
+                            <h5>Paul Keleny</h5>
+                            <span>Site Engineer</span>
+                            <p>Hostly delivers dependable hosting solutions, ensuring
+                                 seamless performance for site engineers </p>
+                            <div class="testimonial__rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <img src="img/team/team-2.jpg" alt="">
+                            <h5>Alex Adam</h5>
+                            <span>Front-End Developer</span>
+                            <p>Hostly’s reliable hosting ensures smooth deployment and performance,
+                                 perfect for front-end developers</p>
+                            <div class="testimonial__rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <img src="img/testimonial/testimonial-3.jpg" alt="">
+                            <h5>Natasha Sam</h5>
+                            <span>Back-End Engineer</span>
+                            <p>Hostly offers robust hosting solutions, ensuring reliability and performance for
+                                 back-end   </p>
+                            <div class="testimonial__rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top-call">
+                            <h5>Need Help? Call us</h5>
+                            <h2 style="color: white; font-size:23px;">+1 234-456-7890</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a href="index.html">
+                            <div class="footer__top-auth">
+                                <h5>Join Now And Have Free Month Of Deluxe Hosting</h5>
+                                <button class="log-btn" id="registerBtn" onclick="openRegisterModal()"> <i class="fa-solid fa-user-plus"></i>Login</button>
+                                <button id="registerBtn" onclick="openRegisterModal()"> <i class="fa-regular fa-user"></i>Sign Up</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__text set-bg" data-setbg="img/footer-bg.png">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer__text-about">
+                            <div class="footer-logo">
+                                <a href="./index.html">
+                                    <img src="img/host-logo.png" alt="">
+                                    <span>Hostly</span>
+                                </a>
+                            </div>
+                            <p>Hostly offers reliable hosting, domain registration, and website solutions tailored for your needs. Crafted by experts to ensure performance, security, and scalability. Contact us anytime for support—your success is our priority. </p>
+                            <div class="footer__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer__text-widget">
+                            <h5>Company</h5>
+                            <ul>
+                                <li><a href="index.html">Company</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="blog-details.html">Press & Media</a></li>
+                                <li><a href="blog.html">News / Blogs</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer__text-widget">
+                            <h5>Hosting</h5>
+                            <ul>
+                                <li><a href="hosting.html">Web Hosting</a></li>
+                                <li><a href="hosting.html">Reseller Hosting</a></li>
+                                <li><a href="hosting.html">VPS Hosting</a></li>
+                                <li><a href="hosting.html">Dedicated Servers</a></li>
+                                <li><a href="hosting.html">Cloud Hosting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer__text-widget">
+                            <h5>cONTACT US</h5>
+                            <ul class="footer__widget-info">
+                                <li><span class="fa fa-map-marker"></span> 500 South Main Street Los Angeles,<br />
+                                    ZZ-96110 USA</li>
+                                <li><span class="fa fa-mobile"></span> 125-711-811 | 125-668-886</li>
+                                <li><span class="fa fa-headphones"></span> Support.hosting@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__text-copyright">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="index.html" target="_blank">Hostly</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

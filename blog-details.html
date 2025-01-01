@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Deerhost Template">
+    <meta name="keywords" content="Deerhost, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog-Details</title>
+    <link rel="icon" href="img/host-logo.png" type="image/png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas__menu__overlay"></div>
+    <div class="offcanvas__menu__wrapper">
+        <div class="canvas__close">
+            <span class="fa fa-times-circle-o"></span>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav class="offcanvas__menu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./hosting.html">Hosting</a></li>
+
+                <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">News</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__info">
+            <ul>
+                <li><span class="icon_phone"></span> +1 123-456-7890</li>
+                <li><span class="fa fa-envelope"></span> Support@gmail.com</li>
+            </ul>
+        </div>
+        <div class="offcanvas__auth">
+            <ul>
+                <!-- <button id="registerBtn" onclick="openRegisterModal()"> <i class="fa-solid fa-user-plus"></i>Login / Register</button> -->
+            </ul>
+        </div>
+        
+    </div>
+    <!-- Offcanvas Menu End -->
+    <!-- ---------------------------------chaat assistance---------------------------------- -->
+    
+      
+    <div class="chat-widget">
+        
+        <div class="chat-icon" id="chat-icon">
+          <i class="fa-regular fa-comment-dots"></i>
+        </div>
+        <div class="chat-window hidden" id="chat-window">
+          <div class="chat-header">
+            <h4>Chat Assistant</h4>
+            <button id="close-chat">✖</button>
+          </div>
+          <div class="chat-body" id="chat-body">
+            <p>Please choose your subscription plan:</p>
+            <div class="plan">
+              <button class="chat-option" onclick="selectPlan('monthly')">Monthly</button>
+            <button class="chat-option" onclick="selectPlan('annual')">Annual</button>
+            </div>
+          </div>
+          <div class="chat-footer">
+            <div class="chat-sent">
+              <input type="text" id="user-input" placeholder="Enter Your Email" />
+            <button id="send-button"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            <span id="response-message" class="hidden">We will contact you.</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- ---------------------------------/chaat assistance---------------------------------- -->
+    <!-- ---------------------------------login page--------------------------- -->
+    <div id="registerModal" class="modal" style="display:none;">
+        <div class="modal-content">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <h2>Sign Up</h2>
+        <div class="login-img">
+            <span >Hostly</span>
+        </div>
+          <form id="registerForm">
+            <input type="text" id="username" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Create a strong password" required>
+            <button type="submit" class="site-btn">Submit</button>
+          </form>
+          <p id="successMessage" style="display: none; color: green; margin-top: 10px;">
+            You are successfully registered!
+          </p>
+        </div>
+      </div>
+    <!-- Landing Page Content -->
+  <!-- Registration Modal -->
+  
+      <!-- ---------------------------------login page--------------------------- -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section header-normal">
+        <div class="header__info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__info-left">
+                            <ul>
+                                <li><span class="icon_phone"></span>+1 123-456-7890</li>
+                                <li><span class="fa fa-envelope"></span> Support@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__info-right">
+                            <ul>
+                                <!-- <button id="registerBtn" > <i class="fa-solid fa-user-plus"></i>Login / Register</button> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html">
+                            <img src="img/host-logo.png" alt="">
+                            <span>Hostly</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <nav class="header__menu">
+                        <ul>
+                            <li ><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./hosting.html">Hosting</a></li>
+                            <li class="active"> <a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./pricing.html">Pricing</a></li>
+                                    <li ><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">News</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__option">
+                        <a href="./index.html"><span class="fa fa-home"></span> Home</a>
+                        <a href="./index.html">News</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Blog Hero Section Begin -->
+    <section class="blog-hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="blog__hero__text">
+                        <div class="label">Guides</div>
+                        <h3>Comprehensive guides to simplify hosting,<br>
+                            domains, and website management 
+                        </h3>
+                        <ul>
+                            <li><i class="fa fa-user"></i> Ahmed Hisham</li>
+                            <li><i class="fa fa-clock-o"></i> Nov 06, 2924</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog__hero__pic set-bg" data-setbg="img/server3.jpg"></div>
+    </section>
+    <!-- Blog Hero Section End -->
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details-section spad">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="blog__details__text">
+                        <div class="blog__details__social">
+                            <span>Share</span>
+                            <ul>
+                                <li>
+                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="blog__details__title">
+                            <p>Navigating the world of web hosting can be overwhelming, especially for beginners. Understanding
+                                 hosting basics, managing domains, and optimizing website performance are essential for creating
+                                  a successful online presence. Our comprehensive guides simplify
+                                this journey, ensuring you have all the tools and knowledge to excel..</p>
+                            <p>Our guides are designed with clear, step-by-step instructions. Whether you're setting
+                                 up your first domain, choosing the right hosting plan, or troubleshooting common 
+                                 issues, we break down complex tasks into manageable steps. By following these detailed instructions,
+                                 even those without technical expertise can achieve professional results.</p>
+                        </div>
+                        <div class="blog__details__quote">
+                            <p>"Knowledge is power, and with the right guidance, you can transform challenges into opportunities and achieve
+                                 online success effortlessly."</p>
+                        </div>
+                        <div class="blog__details__title__more">
+                            <p>A journey of a thousand miles begins with a single step
+                                With the right guidance, building and managing your website becomes an empowering experience.
+                                 Our tutorials provide actionable insights and tips to enhance your skills, paving the way for
+                                 continuous growth and success in the digital world..</p>
+                        </div>
+                        <div class="blog__details__item">
+                            <div class="blog__details__item__pic">
+                                <img src="img/blog/details/blog-details.jpg" alt="">
+                            </div>
+                            <div class="blog__details__item__text">
+                                <p>Understanding the fundamentals of web hosting is crucial for anyone looking to build a strong
+                                     online presence. From domain registration to server setup,
+                                     mastering these essentials provides a solid foundation for success.
+                                </p>
+                                <p>Selecting the best hosting plan depends on your website's needs. Shared hosting is great for beginners, while dedicated servers offer advanced performance for larger businesses.
+                                     Knowing your requirements helps in making the right choice.,</p>
+                            </div>
+                        </div>
+                        <div class="blog__details__desc">
+                            <p>Common hosting issues like downtime, slow speeds, or email errors can be frustrating. Our guides provide step-by-step solutions to tackle these problems effectively,
+                                 saving time and ensuring your website runs smoothly.</p>
+                            <p>Maximize your website’s performance with optimization techniques. From enabling caching to improving load times, these advanced tips help you deliver
+                                 a seamless user experience and boost your site’s efficiency.</p>
+                        </div>
+                        <div class="blog__details__tags">
+                            <a href="#">Hosting</a>
+                            <a href="#">Domain</a>
+                            <a href="#">Server</a>
+                            <a href="#">Wordpress</a>
+                        </div>
+                        <div class="blog__details__profile">
+                            <div class="blog__details__profile__pic">
+                                <img src="img/blog/details/blog-profile.jpg" alt="">
+                            </div>
+                            <div class="blog__details__profile__text">
+                                <h5>Linda Stark</h5>
+                                <p>Hostly's tools make managing and optimizing my projects incredibly seamless and efficient.</p>
+                                <div class="blog__details__profile__social">
+                                    <a href="https://facebook.com"><i  class="fa fa-facebook"></i></a>
+                                    <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://google.com"><i class="fa fa-google-plus"></i></a>
+                                    <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__details__option">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <a href="#" class="blog__details__option__item">
+                                        <h5><i class="fa fa-angle-left"></i> Previous posts</h5>
+                                        <div class="label">Hosting</div>
+                                        <h6>Reliable hosting solutions for <br> seamless performance</h6>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <a href="#" class="blog__details__option__item blog__details__option__item--next">
+                                        <h5>Next posts <i class="fa fa-angle-right"></i></h5>
+                                        <div class="label">Servers</div>
+                                        <h6>Insights on server technology <br> and performance</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__details__comment">
+                            <h4>3 Comment</h4>
+                            <div class="blog__details__comment__list">
+                                <div class="blog__details__comment__item">
+                                    <div class="blog__details__comment__pic">
+                                        <img src="img/blog/details/comment/comment-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog__details__comment__text">
+                                        <h5>Brandon John</h5>
+                                        <p>I completely agree! Hostly's user-friendly interface and reliable performance have made my
+                                             projects much easier to manage .</p>
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> Aug,15, 2024</li>
+                                            <li><i class="fa fa-heart-o"></i> 12</li>
+                                            <li><i class="fa fa-share-square-o"></i> 1</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="blog__details__comment__item blog__details__comment__reply">
+                                    <div class="blog__details__comment__pic">
+                                        <img src="img/blog/details/comment/comment-2.jpg" alt="">
+                                    </div>
+                                    <div class="blog__details__comment__text">
+                                        <h5>Linda Kelley</h5>
+                                        <p>Absolutely! Their hosting services have saved me time and effort,
+                                             allowing me to focus on building great solutions</p>
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> Aug,17, 2024</li>
+                                            <li><i class="fa fa-heart-o"></i> 21</li>
+                                            <li><i class="fa fa-share-square-o"></i> 3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="blog__details__comment__item">
+                                    <div class="blog__details__comment__pic">
+                                        <img src="img/blog/details/comment/comment-3.jpg" alt="">
+                                    </div>
+                                    <div class="blog__details__comment__text">
+                                        <h5>Kelley Nani</h5>
+                                        <p>Hostly has been a game-changer for my projects too! The reliability
+                                             and speed are unmatched in the industry.</p>
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> Aug,21, 2024</li>
+                                            <li><i class="fa fa-heart-o"></i> 23</li>
+                                            <li><i class="fa fa-share-square-o"></i> 6</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-section">
+                                <button id="leaveCommentBtn" class="site-btn">Leave Comment</button>
+                              
+                                <div id="commentForm" class="hidden-section" >
+                                  <textarea id="userComment" placeholder="Write your comment here..." rows="4" cols="50"></textarea>
+                                  <button id="submitCommentBtn" class="site-btn">Submit Comment</button>
+                                </div>
+                              </div>
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+    <div class="footer__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer__top-call">
+                        <h5>Need Help? Call us</h5>
+                        <h2 style="color: white; font-size:23px;">+1 234-456-7890</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <a href="index.html">
+                        <div class="footer__top-auth">
+                            <h5>Join Now And Have Free Month Of Deluxe Hosting</h5>
+                            <button class="log-btn" id="registerBtn" onclick="openRegisterModal()"> <i class="fa-solid fa-user-plus"></i>Login</button>
+                            <button id="registerBtn" onclick="openRegisterModal()"> <i class="fa-regular fa-user"></i>Sign Up</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__text set-bg" data-setbg="img/footer-bg.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer__text-about">
+                        <div class="footer-logo">
+                            <a href="./index.html">
+                                <img src="img/host-logo.png" alt="">
+                                <span>Hostly</span>
+                            </a>
+                        </div>
+                        <p>Hostly offers reliable hosting, domain registration, and website solutions tailored for your needs. Crafted by experts to ensure performance, security, and scalability. Contact us anytime for support—your success is our priority. </p>
+                        <div class="footer__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer__text-widget">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="index.html">Company</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="blog-details.html">Press & Media</a></li>
+                            <li><a href="blog.html">News / Blogs</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer__text-widget">
+                        <h5>Hosting</h5>
+                        <ul>
+                            <li><a href="hosting.html">Web Hosting</a></li>
+                            <li><a href="hosting.html">Reseller Hosting</a></li>
+                            <li><a href="hosting.html">VPS Hosting</a></li>
+                            <li><a href="hosting.html">Dedicated Servers</a></li>
+                            <li><a href="hosting.html">Cloud Hosting</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer__text-widget">
+                        <h5>cONTACT US</h5>
+                        <ul class="footer__widget-info">
+                            <li><span class="fa fa-map-marker"></span> 500 South Main Street Los Angeles,<br />
+                                ZZ-96110 USA</li>
+                            <li><span class="fa fa-mobile"></span> 125-711-811 | 125-668-886</li>
+                            <li><span class="fa fa-headphones"></span> Support.hosting@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__text-copyright">
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="index.html" target="_blank">Hostly</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
